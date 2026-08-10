@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const BASE_URL = process.env.REACT_APP_API_URL || "http://localhost:8000";
+const API_BASE_URL = "https://numerix-na-webapp.vercel.app";
 
 const api = axios.create({
-  baseURL: BASE_URL,
+  baseURL: API_BASE_URL,
   headers: { "Content-Type": "application/json" },
 });
 
